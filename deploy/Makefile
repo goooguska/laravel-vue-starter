@@ -28,7 +28,7 @@ redis-stop:
 	$(DOCKER_COMPOSE) ./docker-compose.redis.yml stop
 
 exec:
-	docker exec -it -u root $(CONTAINER_NAME) /bin/bash
+	docker exec -it -u root $(args) /bin/bash
 
 run: server-run client-run
 
